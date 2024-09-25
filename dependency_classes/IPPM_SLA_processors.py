@@ -23,7 +23,7 @@ class IPPMSLAProcessor:
 
     @staticmethod
     def delete_ippm(ippm_dict):
-        del_ippm = []
+        del_ippm = ["context local", "ippm twamp light cont-sender ",]
         for key, line in ippm_dict.items():
             if line.strip().startswith('session'):
                 del_ippm.append(f" no session {key}")
